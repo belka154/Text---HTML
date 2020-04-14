@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="formdata.php" method="post" name="form1">
+  <fieldset>
+    <legend> Личные данные</legend>
+  <p> <label>Введите Ваше имя: (макс.10 символов) <input type="text" name="name" size="30" maxlength="10"></label></p>
+
+  <p> <label>Введите Ваш пароль:<input type="password" name="name"size="30" maxlength="10"></label></p>
+  </fieldset>
+<fieldset>
+  <legend> Опрос</legend>
+  <p><strong><em>Любите ли Вы цветы? </em></strong></p>
+  <p> <label>ДА <input  type="radio"  value="yes" name="flowers" ></label> <label>Нет <input  type="radio" value="no" name="flowers"></label></p>
+
+  <p> <em><strong>Какие цветы вы любите? </strong></em></p>
+  <p>
+    <label> Анютины глазки <input type="checkbox" name="an"></label>
+  <label> Тюльпаны <input type="checkbox" name="tu"></label>
+  <label> Розы <input type="checkbox" name="ro"></label>
+  </p>
+
+  <p> <strong><em>Сколько видов цветов вы знаете?</em></strong></p>
+  <p><select name="fl">
+    <option>5</option>
+    <option>6</option>
+    <option selected>7</option>
+    <option>8</option>
+  </select></p>
+</fieldset>
+  <fieldset>
+    <legend> Описание</legend>
+  <p><label for="tt">Напишите что небудь о цветах</label></p>
+  <p><textarea name="text" id="tt" cols="70" rows="15"></textarea></p>
+
+  <p><input type="submit" name="submit" value="отправить"> <input type="reset" name="reset" value="сбросить"></p>
+  <p><input type="button" name="button" value="кнопка"></p>
+  <p><input type="image" src="img/зеленая-кнопка-3d-на-белой-предпосылке-26962886.jpg" name="imageButton" value="кнопка"></p>
+  </fieldset>
+</form>
+</body>
+</html>
